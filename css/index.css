@@ -1,0 +1,542 @@
+/*reset.css*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    width: 100%;
+}
+a,a:hover,a:focus {
+    color: #666;
+    text-decoration: none;
+}
+body {
+    font-family: "Microsoft YaHei";
+}
+ul {
+    list-style: none;
+}
+/*common.css*/
+@font-face {
+    font-family: "zy-font";
+    src:
+    url(../fonts/MiFie-Web-Font.svg) format('svg'),
+    url(../fonts/MiFie-Web-Font.eot) format('embedded-opentype'),
+    url(../fonts/MiFie-Web-Font.ttf) format('truetype'),
+    url(../fonts/MiFie-Web-Font.woff) format('woff');
+}
+.icon{
+    font-family: "zy-font";
+}
+.icon_phone::before{
+    content: "\e908";
+}
+.icon_tel::before{
+    content: "\e909";
+}
+.icon_logo::before{
+    content: "\e920";
+    color: #e82322;
+    font-size: 32px;
+}
+.icon_text::before{
+    content: "\e93e";
+    color: #000;
+    font-size: 32px;
+}
+.icon_dollar::before {
+    content: "\e907";
+    font-size: 30px;
+}
+.icon_clock::before{
+    content: "\e906";
+    font-size: 22px;
+}
+.icon_video::before{
+    content: "\e905";
+    font-size: 22px;
+    margin-left: 50px;
+}
+.icon_xw1::before{
+    content: "\e90e";
+    font-size: 40px;
+}
+.icon_xw2::before{
+    content: "\e90f";
+    font-size: 40px;
+}
+.icon_xw3::before{
+    content: "\e910";
+    font-size: 40px;
+}
+.icon_xw4::before{
+    content: "\e911";
+    font-size: 40px;
+}
+.icon_partner01::before{
+    content: "\e946";
+}
+.icon_partner02::before{
+    content: "\e92f";
+}
+.icon_partner03::before{
+    content: "\e92e";
+}
+.icon_partner04::before{
+    content: "\e92a";
+}
+.icon_partner05::before{
+    content: "\e929";
+}
+.icon_partner06::before{
+    content: "\e931";
+}
+.icon_partner07::before{
+    content: "\e92c";
+}
+.icon_partner08::before{
+    content: "\e92b";
+}
+.icon_partner09::before{
+    content: "\e92d";
+}
+/*block.css*/
+/****** 头部 ******/
+.top {
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+}
+.top .container .row div {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.top .container .row div+div {
+    border-left: 1px solid #ccc;
+}
+.top .container .row div:first-child img {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -60px;
+}
+.top .container .row div:first-child:hover img {
+    display: block;
+    z-index: 9;
+}
+.top .container .row div:nth-child(4) .block {
+    display: block;
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e82322;
+    margin: 7px 10px 7px 45px;
+}
+.top .container .row div:nth-child(4) a {
+    float: left;
+}
+/****** 导航模块 ******/
+.navnav {
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+    /*导航栏固定之后*/
+    z-index: 9;
+
+    width: 100%;
+    /*一开始根据自己定位，导航栏上方会有一个空隙，是导航上边的模块留下的*/
+    /*所以定位之后一定要加上top和left的值*/
+    left: 0;
+    top: 0;
+    border-radius: 0;
+}
+/*logo样式*/
+.navnav .navbar-brand {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+}
+.navnav .navbar-brand:hover,
+.navnav .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navnav .navbar-nav > li > a {
+    color: #888;
+    height: 80px;
+    line-height: 50px;
+}
+/*导航中a标签的样式*/
+.navnav .navbar-nav > li > a:hover,
+.navnav .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 3px solid #e92322;
+}
+/*active类名下的样式*/
+.navnav .navbar-nav > .active > a,
+.navnav .navbar-nav > .active > a:hover,
+.navnav .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+    border-bottom: 3px solid #e92322;
+}
+/*按扭的样式*/
+.navnav .navbar-toggle {
+    border-color: #ddd;
+    margin-top:23px;
+}
+.navnav .navbar-toggle:hover,
+.navnav .navbar-toggle:focus {
+    background-color: #ddd;
+}
+/*按钮上的横线装饰*/
+.navnav .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+/****** 轮播 ******/
+.banner .big {
+    /*大图的情况*/
+    display: block;
+    width: 100%;
+    height: 410px;
+    /*背景图居中显示，并且铺满整个盒子*/
+    background: no-repeat center/cover;
+}
+.banner .small {
+    display: block;
+    width: 100%;
+}
+.banner .small img {
+    display: block;
+    width: 100%;
+}
+
+/****** 信息 ******/
+.info {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+@media (min-width: 992px) {
+    .info .container {
+        width: 910px;
+    }
+}
+.info_box {
+    display: block;
+    padding: 15px 0;
+}
+.info_box:hover {
+    color: #e82322;
+}
+
+/****** 预约 ******/
+.book {
+    border-bottom: 1px solid #ccc;
+}
+
+.book .container span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    color: #666;
+}
+.book .container span .yy {
+    margin: 0 20px;
+    color: #e82323;
+    border-bottom: 1px dashed #e82323;
+}
+.book .container span.red {
+    color: #e82322;
+}
+
+/****** 商品区域 ******/
+.product{
+    /*商品整体模块的样式*/
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    background: #f5f5f5;
+}
+.product .nav-tabs-parent{
+    /*导航部分的父元素*/
+    width: 100%;
+    overflow: hidden;
+}
+.product .nav-tabs {
+    /*导航栏*/
+    border-bottom: 1px solid #ddd;
+}
+.product .nav-tabs > li {
+    float: left;
+    margin-bottom: 0;
+    margin-left:15px;
+}
+.product .nav-tabs > li > a {
+    border: none;
+}
+.product .nav-tabs > li > a:hover {
+    background: #f5f5f5;
+}
+.product .nav-tabs > li.active > a,
+.product .nav-tabs > li.active > a:hover,
+.product .nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background: #f5f5f5;
+    border: none;
+    border-bottom: 3px solid #e92322;
+}
+/*每个块的样式*/
+.product .con .block {
+    float: left;
+    position: relative;
+    margin: 15px 0;
+}
+.product .con .block a {
+    display: block;
+    box-shadow: 3px 3px 5px #d8d8d8;
+}
+/*块的左半部分*/
+.product .con .block .left{
+    /*隔离*/
+    overflow: hidden;
+    height: 147px;
+    background-color: #fff;
+    border-right: 1px dashed #ccc;
+    padding: 0 15px;
+    font-size: 12px;
+}
+.product .con .block .left .one {
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.product .con .block .left .num1 {
+    margin-bottom: 20px;
+}
+.product .con .block .left .fr {
+    float: right;
+}
+/*块的右半部分*/
+.product .con .block .right {
+    float: right;
+    width: 107px;
+    height: 147px;
+    background-color: #fff;
+    padding: 35px 30px;
+    color: #e82322;
+}
+.product .con .block .right .num {
+    font-size: 37px;
+    font-weight: bold;
+}
+.product .con .block .right .bai {
+    font-size: 14px;
+}
+.product .con .block .right .lv {
+    font-size: 14px;
+    color: #666;
+}
+/*两个遮挡的小球*/
+.product .con .block .qiu {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    position: absolute;
+
+}
+.product .con .block .q1 {
+    right: 117px;
+    top: -6px;
+    box-shadow: 0 -2px 3px #d8d8d8 inset;
+}
+.product .con .block .q2 {
+    right: 117px;
+    top: 140px;
+    box-shadow: 0 2px 3px #d8d8d8 inset;
+}
+/*active块 样式不同*/
+.product .con .active .left{
+    background-color: #e82322;
+    color: #fff;
+}
+.product .con .active .left .word1 {
+    color: rgba(255,255,255,.4);
+}
+.product .con .active .left .word2 {
+    color: rgba(255,255,255,.4);
+}
+.product .con .active .right{
+    background-color: #e82322;
+    color: #fff;
+}
+.product .con .active .right .lv {
+    color: #fff;
+}
+/*第二个块*/
+.product .con .block2 .right {
+    padding-top: 16px;
+}
+.product .con .block2 .right .kuang {
+    cursor: default;
+    /*带框小模块的样式*/
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.product .con .block2 .right .bao {
+    border-color: #ff0000;
+    color: #ff0000;
+}
+.product .con .block2 .right .bei {
+    border-color: #008000;
+    color: #008000;
+}
+
+/****** 新闻 ******/
+.news{
+    /*新闻模块的整体*/
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.news .news_title{
+    /*不需要h标签的加粗效果*/
+    font-weight: normal;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    /*居中显示*/
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.news .news_title::after{
+    /*伪元素，小圆圈*/
+    content: "";
+    position: absolute;
+    right: -6px;
+    bottom: -3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.news .news_line{
+    /*虚线*/
+    width: 1px;
+    border-left:1px dashed #ccc;
+    position: absolute;
+    left: 45px;
+    top: 0;
+    height: 100%;
+}
+/*文字内容*/
+.news .news_con{
+    list-style: none;
+}
+.news .news_con li{
+    /*转换成行内块元素，li长度不占满一行*/
+    display: inline-block;
+    padding: 15px 0;
+}
+.news .news_con li a{
+    display: block;
+}
+.news .news_con li a:hover{
+    text-decoration: none;
+    color: #e92322;
+}
+/*导航条*/
+.news .nav-tabs {
+    /*不需要底部自带的边框*/
+    border-bottom: none;
+}
+.news .nav-tabs > li > a {
+    margin-right:0;
+    border: none;
+    /*居中*/
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    text-align: center;
+    border-radius: 30px;
+    background: #ccc;
+    margin-bottom:60px;
+    color: #fff;
+    font-size: 30px;
+}
+/*小屏间距固定*/
+/*多个条件用and连接*/
+@media (min-width: 768px) and (max-width: 992px) {
+    .news .nav-tabs > li > a {
+        margin: 30px 50px;
+    }
+}
+/*超小屏间距自适应*/
+@media (max-width: 768px) {
+    .news .nav-tabs > li {
+        width: 25%;
+    }
+    .news .nav-tabs > li > a {
+        margin: 30px auto;
+    }
+}
+/*最后一个li中的a底外边距应该为0，
+否则虚线会跟着整体的高度延伸出来*/
+.news .nav-tabs > li:last-child > a{
+    margin-bottom:0;
+}
+.news .nav-tabs > li.active > a,
+.news .nav-tabs > li.active > a:hover,
+.news .nav-tabs > li.active > a:focus {
+    /*相关平台的默认光标形状，通常为箭头*/
+    cursor: default;
+    background-color: #e82323;
+    border: none;
+    color: #fff;
+}
+
+/****** 合作伙伴 ******/
+.partner{
+    /*上下间距是40px，左右没有间距*/
+    padding: 30px 0;
+}
+.partner h2 {
+    /*文字居中显示*/
+    text-align: center;
+}
+.partner ul{
+    list-style: none;
+    text-align: center;
+}
+.partner ul li{
+    /*li转换成行内块元素，变成一行排布，并且可以设定宽高*/
+    display: inline-block;
+}
+.partner ul li a{
+    /*a转换成行内块，可以设定宽高，更容易被点到*/
+    display: block;
+    font-size: 60px;
+    color: #666;
+    margin: 0 15px;
+}
+.partner ul li a:hover{
+    color: #e82323;
+}
